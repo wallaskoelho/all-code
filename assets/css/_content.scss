@@ -1,6 +1,58 @@
 
 
-.content{
+#content{
     display: grid;
     grid-area: content;
+    
+}
+
+
+.h1-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    padding: 1rem;
+}
+
+.h2-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+
+.h3-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    padding: 1rem;
+
+}
+
+
+.h4-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1rem;
+
+}
+
+
+.h5-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 1rem;
+
+}
+
+.p-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+
 }

@@ -1,0 +1,29 @@
+#sidnav{
+    display: grid;
+    grid-area: sidnav;
+}
+
+.sidnav{
+    display: flex;
+    background-color: rgb(102, 197, 102);
+    padding: 15px;
+    
+}
+
+.s-ul{
+    list-style: none;
+}
+
+.s-u-li{
+
+    a{
+        color: rgb(255, 255, 255);
+    }
+
+    
+}
+
+.s-u-li:hover{
+    display: block;
+    background-color: rgb(172, 163, 163);
+}

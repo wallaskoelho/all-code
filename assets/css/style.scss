@@ -2,11 +2,17 @@
 @import 'nav';
 @import 'content';
 @import 'footer';
+@import 'sidnav';
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 .body{
@@ -16,16 +22,13 @@
     grid-template-columns: minmax(160px, 1fr) 3fr 1fr;
     grid-template-areas: 
     "header header header"
-    "nav content content"
+    "nav nav nav"
+    "sidnav content content"
     "footer footer footer"
     ;
 
     
 }
-
-
-
-
 
 
 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>CSS GRID</title>
+</head>
+<body class="body">
+
+    <header id="header" class="header">
+        <img src="assets/img/logo.webp" alt="logo do site">
+
+        <nav class="h-nav">
+            <ul class="h-n-ul">
+                <li class="n-u-li"><a href="../html/html.html">HTML</a></li>
+                <li class="n-u-li"><a href="../css/css.html">CSS</a></li>
+                <li class="n-u-li"><a href="../java script/javascript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <nav class="nav">
+        <ul class="n-ul">
+            <li class="u-li"><a href="../html/html.html">HTML</a></li>
+            <li class="u-li"><a href="../css/css.html">CSS</a></li>
+            <li class="u-li"><a href="../java script/javascript.html">JavaScript</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <nav id="sidnav" class="sidnav">
+        <ul class="s-ul">
+            <li class="s-u-li"><a href="css.html">CSS</a></li>
+            <li class="s-u-li"><a href="grid.html">Grid</a></li>
+        </ul>
+    </nav>
+
+    <main id="contetn" class="main">
+
+        <h2 class="h2-1">Grid Container</h2>
+
+        <p class="p-1">Elemento pai, que envolve todos os elementos detro do elmento no qual é declarado</p>
+
+        <p class="p-1">Display: grid e Dlipay: inline-grid</p>
+
+        <h3 class="h3-1">Grid Itens</h3>
+
+        <p class="p-1">Filhos dirotos dos Elemento pai, elementos dentro de um elemto declarado como Grid</p>
+
+        <h3 class="h3-1">Grid Coluns</h3>
+
+        <p class="p-1">são as colunas dentro de um elemento grid. Faixas na vertical</p>
+
+        <p class="p-1">grid-template-columns</p>
+
+        <p class="p-1">grid-template-columns: reapt(3, 1fr);</p>
+
+        <p class="p-1">grid-template-columns: 160px reapt(3, 1fr) 2fr;</p>
+
+        <p class="p-1">grid-template-columns: reapt(3, 1fr 2fr);</p>
+
+        <h4 class="h4-1">auto-fill</h4>
+
+        <p class="p-1">grid-template-columns: reapt(auto-fill, 1fr);</p>
+
+        <p class="p-1">grid-template-columns: reapt(auto-fill, minmax(100px, 1fr));</p>
+
+        <h4 class="h4-1">auto-fit</h4>
+
+        <p class="p-1">grid-template-columns: reapt(auto-fit, 1fr);</p>
+
+        <p class="p-1">grid-template-columns: reapt(auto-fit, minmax(100px, 1fr));</p>
+
+        <h3 class="h3-1">Grid rows</h3>
+
+        <p class="p-1">São as linhas dentro do elemneto grid. Faixas na horizontal</p>
+
+        <h4 class="h4-1">grid-template-columns: min-content;</h4>
+
+        <h4 class="h4-1">grid-template-columns: min-content min-content;</h4>
+
+        <h4 class="h4-1">grid-template-columns: max-content;</h4>
+
+        <h4 class="h4-1">grid-template-columns: auto auto;</h4>
+
+        <h4 class="h4-1">grid-template-columns: auto 1fr;</h4>
+
+        <p class="p-1">grid-template-rows</p>
+
+        <h3 class="h3-1">Grid Gap</h3>
+
+        <p class="p-1">Espaços entre grid coluns e grid row. coluns gap e rows gap</p>
+
+        <h3 class="h3-1">Grid Line</h3>
+
+        <p class="p-1">Divisorias que compõe a estrutra da grade clomn line (linhas entre colunas) e row line (linhas entre linhas)</p>
+        
+        <h3 class="h3-1">Grid Cell</h3>
+
+        <p class="p-1">Celula do Grid, cada espaço entre uma rows e clonus</p>
+
+        <h2 class="h2-1">Grid inplicito, grid-auto-rows e grid-auto-columns</h2>
+
+        <p class="p-1">Define tamnahos padrão para celulas grid criada automaticamente atravez da propriedade grid-auto-columns: e grid-auto-rows:</p>
+        
+        <h2 class="h2-1">grdi auto flow</h2>
+
+        <p class="p-1">o grid-auto-flow determina aonde, celulas que não estão dentro de alguma configração gride, vão ficar, sendo o valor padrão rows, linhas abaixo, aceitando também o padrão columns e sendo alocado em uma coluna</p>
+        
+        <p class="p-1">grid-auto-flow:dense;</p>
+
+        <h2 class="h2-1">minmxa</h2>
+
+        <p class="p-1">cria valor maximo e minimos predefinidos que que a responsividade não quebre um leyate cresendo ou diminuito mais que o seu conteúdo. Ajustando melhor a o conteúdo</p>
+
+        <h2 class="h2-1">Grid line</h2>
+
+        <p class="p-1">grid-column-end: ; grid-column-start: ; grid-column-end: span ; grid-rows-end: ; grid-rows-start: ; grid-rows-end: span ; pode ser simplificado para: grid-column: / ; grid-rows: / ; grid-column: span ; . pode ser simplifiado ainda mais para grid-area: / / / ;</p>
+
+        <h2 class="h2-1">Grid area, grid-area</h2>
+
+        <p class="p-1">grid-template-areas: ;</p>
+
+        <h2 class="h2-1">Grid templante grid-tempale</h2>
+
+        <p class="p-1">É uma abreviação do grid-template-columns, grid-template-rows e grid-template-areas</p>
+
+        <p class="p-1">grid-tempale: "header header header" 200px "nav content ads" "footer footer footer" / 1fr 3fr 1fr; </p>
+
+        <h2 class="h2-1">gap: ;</h2>
+        
+        <p class="p-1">Uma propriedade do grid que permite cria um espaço enter os elementos. o gap e uma junção do column-gap: e rows-gap:</p>
+        
+        <h2 class="h2-1">grid:</h2>
+
+        <p class="p-1">a tag grid: ; é uma abreviaçãode todas as propriedades grid.</p>
+
+        <h2 class="h2-1">justify-items:</h2>
+
+        <p class="p-1">atributo que alinhas os itens de um elemneto grid na horizontal, que aceita os valor start, and, center, stretch</p>
+
+        <h2 class="h2-1">align-items</h2>
+
+        <p class="p-1">atributo que alinhas os itens de um elemneto grid na vertical, que aceita os valor start, and, center, stretch</p>
+
+        <h2 class="h2-1">place-items:</h2>
+
+        <p class="p-1">tag que junta justify-items align-items</p>
+
+        <h2 class="h2-1">justify-content: ; e align-content: ;</h2>
+
+        <p class="p-1">propriedades que premite alinhas os itens na horizontal e vertical quando eles não ocupar todo o container, aceitar valores como start, center, end, space-betwen, space-around, space-evenly e stretch</p>
+
+        <h3 class="h3-1">place-content:</h3>
+
+        <p class="p-1">propriedade que permite juntar valores de justify-contente align-content</p>
+
+        <h2 class="h2-1">justify-self: e aling-self</h2>
+
+        <p class="p-1">prorpiedades que alinha horizontale verticalmente uma celula especifica de uma grid, aceitar os valore start, end, center, stretch.</p>
+
+        <h3 class="h3-1">place-self</h3>
+
+        <p class="p-1">atributo que recebe valores de justify-self e aling-self</p>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <p class="p-1">Wallas Koelho</p>
+    </footer>
+    
+</body>
+</html>

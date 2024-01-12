@@ -1,5 +1,31 @@
 
-.header{
+#header{
     display: grid;
     grid-area: header;
+    display: flex;
+}
+
+.header{
+    background-color: purple;
+    justify-content: space-between;
+    color: white;
+    padding: 15px;
+}
+
+
+.h-n-ul{
+    display: flex;
+    justify-content:space-between;
+   
+    gap: 1rem;
+    list-style: none;
+
+    li{
+
+        a{
+            color: white;
+        
+            
+        }
+    }
 }
