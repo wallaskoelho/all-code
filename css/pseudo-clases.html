@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Pseudo-clases</title>
+    <title>Pseudo clases</title>
 </head>
-<body>
+<body class="body">
     <header id="header" class="header">
         <img src="assets/img/logo.webp" alt="logo do site">
 
@@ -37,12 +37,130 @@
             <li class="n-u-li"><a href="responsividade.html">Responsividade</a></li>
             <li class="n-u-li"><a href="pseudo-elementos.html">Pseudo-elementos</a></li>
             <li class="n-u-li"><a href="pseudo-clases.html">Pseudo-clases</a></li>
+            <li class="n-u-li"><a href="transformacao-2d.html">Transformações 2D</a></li>
+            <li class="n-u-li"><a href="transformacao-3d.html">Transformações 3D</a></li>
+            <li class="n-u-li"><a href="animacoes.html">Animações</a></li>
         </ul>
     </nav>
 
     <main class="main">
 
+        <h1 class="h1-1">Pseudo Clases</h1>
+
+        <h2 class="h2-1">:hover</h2>
+
+        <p class="p-1">Permite estilizar alguma elemento que sera mostrado quando o usuario pasar o mause por cima do elementor especificado</p>
+
+        <h2 class="h2-1">:active</h2>
+
+        <p class="p-1">Permite criar uma estilização de qualquer elemento equanto ele estive sendo clicdo</p>
+
+        <h2 class="h2-1">:focus</h2>
+
+        <p class="p-1">Permite criar estilização para quando um elemento estiver focado, selecionado, como um campo de um formulario quando for ciclado</p>
+
+        <h3 class="h3-1">:focus-within</h3>
+
+        <p class="p-1">Permiter apicar estilização para todos os elementos debtro da atributo label</p>
+
+        <h3 class="h3-1">:focus-visible</h3>
+
+        <p class="p-1">So aplica a estiliza quando o button for selecionado por movimento do teclado, e não aplica quando é clicado</p>
+        
+        <h2 class="h2-1">:target</h2>
+
+        <p class="p-1">Permite estilizar um bloco do site quando ele for selecionado por meio de um link interno.</p>
+
+        <h2 class="h2-1">:enableb :disabled</h2>
+
+        <p class="p-1">Permite estilizar qualquer elemento que aceita a tag enabled e disabled, como a tag button por exemplo.</p>
+
+        <h2 class="h2-1">:link :visited</h2>
+
+        <p class="p-1">Permite estilizar um link, :link para links não clicados e visited para links visitados</p>
+
+        <h2 class="h2-1">placeholder-shown</h2>
+
+        <p class="p-1">Perminte estilizar um ipunt que tenha placeholder enquanto ele não estiver sido prenchido</p>
+
+        <h2 class="h2-1">checked</h2>
+
+        <p class="p-1">Perminte estilizar um um checkbox enquanto ele estiver selecionado</p>
+
+        <h2 class="h2-1">indeterminate</h2>
+
+        <p class="p-1">Perminte estilizar um elemento que posua uma condição de indeterminado</p>
+
+        <h2 class="h2-1">valid invalid</h2>
+
+        <p class="p-1">Perminte estilizar um campo de formulario quando houver espeficação de validade, e com uso de valid e invalid para demostra visualmente que o valor é valido ou invalido</p>
+
+        <h2 class="h2-1">in-range out-of-range</h2>
+
+        <p class="p-1">Perminte estilizar um campo de formulario, quando seu prechimento permite colocar um ranque de infromação, como idade, quantidade, atravez do atributo in-range e out-of-range desmotra visualmente se o valor inserio esta dentro ou fora dos valores aceitos como validos</p>
+
+        <h2 class="h2-1">required optional</h2>
+
+        <p class="p-1">Permiinte estilziar os campo de um formulario confore ele seja obrigatorio ou opcional</p>
+
+        <h2 class="h2-1">autofill</h2>
+
+        <p class="p-1">Permite estilziar um campo de um formulario que foi prenchido altomaticamente, desmotrando de forma visual ao usuario. e ideal usar o :-webkit-autofill para evitar incompatibilidades com alguns browser</p>
+
+        <h2 class="h2-1">root</h2>
+
+        <p class="p-1">Permite aplicar configuraçoẽs na raiz do site, o root equivale ao html.</p>
+
+        <h2 class="h2-1">nth-child nth-of-type</h2>
+
+        <p class="p-1">Permite eslizar os filhos de um terminado parmentro podendo ser especificado a ordem dos filhos, :nth-child(2)</p>
+
+        <h2 class="h2-1">nth-of-child nth-of-type</h2>
+
+        <p class="p-1">Permite eslizar os filhos de um terminado parmentro podendo ser especificado a ordem dos filhos, porem no sendtido do ultimo para o primeiro, de baixo para cima :nth-child(2)</p>
+
+
+        <p class="p-1">O nth-child sempre vai estilizar o primeiro filho da mesma tag, e o nth-of-type vai selecionar todos so filhos independente do tipo de tag.</p>
+
+        <p class="p-1">também pode selecionar uma lista de acordo como a posição se impar(odd) ou par(even)</p>
+
+        <h2 class="h2-1">first-fo-type last-of-type</h2>
+
+        <p class="p-1">Permite elstilizar o primeiro e ultimo elemento de cada tipo de tag</p>
+
+        <h2 class="h2-1">only-child</h2>
+
+        <p class="p-1">Permite estlizar intems que não tenha irmãos, independente do tipo de tag</p>
+
+        <h2 class="h2-1">only-of-type</h2>
+
+        <p class="p-1">Permite estlizar intems que não tenha irmãos de mesma tag, do mesmo tipo</p>
+
+        <h2 class="h2-1">mepty</h2>
+
+        <p class="p-1">Permiste selecionar elmentos que não tenha textos ecritos, elementos em branco, espaco, comentario, elemteos vasios dentro de elementos vasios, e texto inserio atravez do css são selecionados, são elementos vazios.</p>
+
+        <h2 class="h2-1">:is(){}</h2>
+
+        <p class="p-1">Permite selecionar varias tags, classes, id de uma so vez para adicionar qual paramentro css, :is(h2, p, .content1, #menu2){color:red} :is(main, article, div, section, span) p{color: blue; background: white</p>
+
+        <h2 class="h2-1">where</h2>
+
+        <p class="p-1">tem a mesma função que o :is, porem não tem a mesma formça, sendo rescrito caso o mesmo elemento seja estilizado por outra tag.</p>
+
+        <h2 class="h2-1">not()</h2>
+
+        <p class="p-1">É um elemento de engação, oque for declarado nele, não sera estilizado</p>
+        
+        <h2 class="h2-1">:has()</h2>
+
+        <p class="p-1">Permite selecionar elementos com base nos elementos que ele posui</p>
 
     </main>
+
+    <footer id="footer" class="footer">
+        <p class="p-1">Wallas Koelho</p>
+    </footer>
+
 </body>
 </html>
