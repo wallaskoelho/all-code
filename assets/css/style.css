@@ -22,10 +22,24 @@
   color: white;
 }
 
-#nav {
-  display: grid;
+.nav {
   grid-area: nav;
+  background: cadetblue;
+  margin: 2px;
+}
+
+.nav ul {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.nav ul a {
+  color: white;
 }
 
 #content {
