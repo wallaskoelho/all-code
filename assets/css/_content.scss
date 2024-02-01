@@ -1,11 +1,13 @@
 
 
-#content{
-    display: grid;
+.main{
     grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
     
 }
-
 
 .h1-1{
     font-family: 'Roboto', sans-serif;
@@ -53,6 +55,11 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    padding: .5rem 1rem;
+    padding: .5rem;
 
+}
+
+.li-1{
+    list-style: none;
+    padding: .1rem .5rem;
 }

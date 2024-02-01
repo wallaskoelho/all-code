@@ -42,6 +42,7 @@
             <li class="n-u-li"><a href="transformacao-3d.html">Transformações 3D</a></li>
             <li class="n-u-li"><a href="animacoes.html">Animações</a></li>
             <li class="n-u-li"><a href="boas-praticas-e-conversoes.html">Boas Práticas E Convenções</a></li>
+            <li class="n-u-li"><a href="compatibilidade-ente-navegadores.html">Compatibilidade Entre Navegadores</a></li>
         </ul>
     </nav>
 
@@ -49,7 +50,40 @@
     <main class="main">
 
         <h1 class="h1-1">Boas Práticas E Convenções</h1>
+
+        <h2 class="h2-1">Hierarquia De Especificidade</h2>
+
+        <p class="p-1">Regtras de herarquia e Especificidade</p>
+
+        <ul>
+            <li class="li-1">inline: 1000 pontos</li>
+            <li class="li-1">id: 100 pontos</li>
+            <li class="li-1">clases, pseudo-clases e atributos; 10 pontos</li>
+            <li class="li-1">tags html: 1 ponto</li>
+        </ul>
+
+        <p class="p-1">Como é feito o calculo</p>
+
+        <ul>
+            <li class="li-1">#xemplo h1.titulo: 100 + 1 + 10 = 110 pontos </li>
+            <li class="li-1">a:hover; 1 + 10 = 11 pontos</li>
+            <li class="li-1">div p: 1 + 1 = 2 pontos</li>
+        </ul>
+
+        <h3 class="h2-1">Hierarquia Do Efeito Em Cascata</h3>
+
+        <p class="p-1">Trata do nivel de prioridadde de uma estilização. o css in line é o de maior prioridade, dopois o css interno, depois folha de estilo e por ultimo a estilização padrão do navegador</p>
         
+        <h2 class="h2-1">important</h2>
+
+        <p class="p-1">!important deve ser usado so quando extremanete necessario, tem nivel de pioridade maixa. color:red !important; font-zise: 2rem !important;</p>
+
+        <h2 class="h2-1">Herança inherit</h2>
+
+        <p class="p-1">a propriedade inherit força elemtenos que não erdam configração de seus pais, a erdarem.</p>
+
+
+
     </main>
 
     <footer id="footer" class="footer">
