@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Estruturas de Repetição</title>
+</head>
+<body class="body">
+
+    <header id="header" class="header">
+        <a href="../index.html"> <img src="assets/img/logo.webp" alt="logo do site"></a>
+
+        <nav class="h-nav">
+            <ul class="h-n-ul">
+                <li class="n-u-li"><a href="../html/html.html">HTML</a></li>
+                <li class="n-u-li"><a href="../css/css.html">CSS</a></li>
+                <li class="n-u-li"><a href="../java script/javascript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <nav class="nav">
+        <ul class="n-ul">
+            <li class="u-li"><a href="../html/html.html">HTML</a></li>
+            <li class="u-li"><a href="../css/css.html">CSS</a></li>
+            <li class="u-li"><a href="../java script/javascript.html">JavaScript</a></li>
+        </ul>
+    </nav>
+
+    <nav id="sidnav" class="sidnav">
+        <ul class="s-ul">
+            <li class="s-u-li"><a href="function.html">Function</a></li>
+            <li class="s-u-li"><a href="objetos.html">Objetos</a></li>
+            <li class="n-u-li"><a href="classes.html">Classes</a></li>
+            <li class="n-u-li"><a href="estruturas-de-repeticao.html">Estruturas De Repetição</a></li>
+            <li class="n-u-li"><a href="importacao-e-exportacao.html">Importação E Exportação</a></li>
+            <li class="n-u-li"><a href=""></a></li>
+            <li class="n-u-li"><a href=""></a></li>
+            <li class="n-u-li"><a href=""></a></li>
+            <li class="n-u-li"><a href=""></a></li>
+            <li class="n-u-li"><a href=""></a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+
+        <h1 class="h1-1">Java Script</h1>
+
+        <h2 class="h2-1">Estruturas de Repetição</h2>
+
+        <p class="p-1">...</p>
+
+        <p class="p-1">
+
+            class Pessoa {
+            
+                nome;
+                altura;
+                peso;
+            
+                constructor (nome, altura, peso){
+                    this.nome = nome;
+                    this.altura = altura;
+                    this.peso = peso;
+                }
+            
+                clacularImc (){
+                    return this.peso / (this.altura * this.altura);
+                }
+            }
+            
+            const jose = new Pessoa('José', 1.69, 76);
+            console.log(jose.clacularImc());
+            
+            const wallas = new Pessoa('Wallas', 1.68,74);
+            console.log(wallas.nome + ' tem um imc de: ' + wallas.clacularImc());
+            
+            
+            class Carro {
+                marca;
+                cor;
+                kmLitro;
+                distancia;
+                valorLitro;
+            
+                constructor (marca,cor,kmLitro,distancia,valorLitro){
+                    this.marca = marca;
+                    this.cor = cor;
+                    this.kmLitro = kmLitro;
+                    this.distancia = distancia;
+                    this.valorLitro = valorLitro;
+                }
+            
+                caulcularCusto () {
+                    return ((1 / this.kmLitro) * this.distancia) * this.valorLitro;
+                }
+            }
+            
+            const uno = new Carro('Fiat','branco',10,160,6);
+            console.log('de ' + uno.marca + ' custa: ' + uno.caulcularCusto());
+            
+            const scania = new Carro('Scania','branco',4,160,6);
+            console.log('de ' + scania.marca + ' custa: ' + scania.caulcularCusto());
+            
+            
+            
+            const notas1 = [];
+            
+            notas1.push(7);
+            notas1.push(9)
+            notas1.push(5)
+            
+            let soma1 = 0;
+            
+            for (let i = 0; i < notas1.length; i++) {
+                const media1 = notas1[i];
+                soma1 = soma1 + media1
+            }
+            
+            const mediaPriSem = soma1 / notas1.length;
+            
+            console.log('Pontos total do 1ª semestre: ' + soma1)
+            console.log('Media do 1ª semestre: ' + mediaPriSem)
+            
+            
+            const notas2 = [];
+            
+            notas2.push(8.5);
+            notas2.push(7)
+            notas2.push(6.5)
+            notas2.push(5)
+            
+            var soma2 = 0;
+            
+            for (let i = 0; i < notas2.length; i++) {
+                const media2 = notas2[i];
+                soma2 = soma2 + media2;
+                
+            }
+            
+            const mediaSegSem = soma2 / notas2.length;
+            
+            console.log('Pontos total do 2ª semestre: ' + soma2)
+            console.log('Media do 2ª semestre: ' + mediaSegSem)
+            
+            
+            const mediaFinal = (mediaPriSem + mediaSegSem) / 2
+            
+            console.log('A media: ' + mediaFinal)
+            
+            
+            const numero = 2;
+            
+            for (let i = 1; i <=10; i++) {
+                    console.log(i * numero);
+                
+            }
+            
+            
+            const numero1 = 2;
+            
+            for (let i = 1; i <=10; i = i + 2) {
+                console.log(i * numero1);
+                
+            }</p>
+        
+    </main>
+
+    <footer id="footer" class="footer">
+        <p class="p-1">Wallas Koelho</p>
+    </footer>
+
+    
+</body>
+</html>
